@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Alex Rivera, a full stack developer building fast, accessible web applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="#" class="logo">Alex<span>.</span>Rivera</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="about">
+      <div class="hero-inner">
+        <p class="eyebrow">Full Stack Developer · DecodeLabs Intern</p>
+        <h1>I build interfaces that adapt<br> before they decorate.</h1>
+        <p class="hero-sub">
+          Currently training at DecodeLabs, sharpening the fundamentals: semantic HTML,
+          responsive CSS, and clean JavaScript — no frameworks, just the raw craft.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">01</div>
+          <h3>Responsive Portfolio</h3>
+          <p>This very site — built mobile-first with CSS Grid and Flexbox, no frameworks.</p>
+          <div class="tags"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">02</div>
+          <h3>Task Tracker UI</h3>
+          <p>A drag-free kanban-style board concept with local state and keyboard support.</p>
+          <div class="tags"><span>JavaScript</span><span>A11y</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">03</div>
+          <h3>Weather Dashboard</h3>
+          <p>Fetches live data and lays it out in a fluid CSS Grid that reflows per screen size.</p>
+          <div class="tags"><span>API</span><span>CSS Grid</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 &amp; Semantic Markup</li>
+        <li>CSS3 (Grid, Flexbox, clamp())</li>
+        <li>JavaScript (DOM, Events, Fetch)</li>
+        <li>Responsive &amp; Mobile-First Design</li>
+        <li>Web Accessibility (WCAG)</li>
+        <li>Git &amp; Version Control</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-sub">Open to internship feedback, collaboration, or just a chat about frontend craft.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Alex Rivera. Built at DecodeLabs.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
